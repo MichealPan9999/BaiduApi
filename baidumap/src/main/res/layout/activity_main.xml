@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/editText_lg"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:hint="经度" />
+
+        <EditText
+            android:id="@+id/editText_la"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:hint="纬度" />
+
+        <Button
+            android:id="@+id/button_llsearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="前往" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/editText_site"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:hint="地址" />
+
+        <Button
+            android:id="@+id/button_sitesearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="前往" />
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/baiduMapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+</LinearLayout>
